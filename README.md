@@ -2,7 +2,7 @@
 
 Transformed to CoreML [NAFNet](https://github.com/megvii-research/NAFNet) model for deblurring.
 Normalization, preprocessing and postprocessing were integrated to network graph. FP8 quantized model is provided
-[weights/nafnet_fp8.mlmodel](weights/nafnet_fp8.mlmodel).
+[weights/nafnet_reds_64_fp8.mlmodel](weights%2Fnafnet_reds_64_fp8.mlmodel) (66.04 MB).
 Original model is [NAFNet-REDS-width64](https://github.com/megvii-research/NAFNet#results-and-pre-trained-models).
 
 Model accepts given sizes:
