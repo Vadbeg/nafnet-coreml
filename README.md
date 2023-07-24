@@ -5,6 +5,8 @@ Normalization, preprocessing and postprocessing were integrated to network graph
 [weights/nafnet_reds_64_fp8.mlmodel](weights%2Fnafnet_reds_64_fp8.mlmodel) (66.04 MB).
 Original model is [NAFNet-REDS-width64](https://github.com/megvii-research/NAFNet#results-and-pre-trained-models).
 
+There is a known issue with artifacts on the edges of the image. It is caused by the model inference with FP16 and lower.
+
 Model accepts given sizes:
 ```python
 [
