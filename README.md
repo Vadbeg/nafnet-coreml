@@ -6,6 +6,9 @@ Normalization, preprocessing and postprocessing were integrated to network graph
 Original model is [NAFNet-REDS-width64](https://github.com/megvii-research/NAFNet#results-and-pre-trained-models).
 
 There is a known issue with artifacts on the edges of the image. It is caused by the model inference with FP16 and lower.
+If you're encountering this issue, try to use FP32/FP16 model. You can download those models from [here](https://drive.google.com/drive/folders/1t_S3o36fWZ7s2EvDvhm4sWXbEV3gibTF?usp=sharing).
+Also, model needs to be inferenced in FP32 too,
+so try to use CPU on the device, because Apple mobile NPU/GPU is [not supported](https://coremltools.readme.io/docs/typed-execution#neural-network-untyped-tensors) for FP32.
 
 Model accepts given sizes:
 ```python
